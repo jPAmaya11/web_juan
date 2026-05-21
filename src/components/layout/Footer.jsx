@@ -3,9 +3,9 @@ import { FiGithub, FiLinkedin, FiInstagram, FiMail } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const socials = [
-  { icon: FiGithub,   href: 'https://github.com/juanamayaquiroz',                      label: 'GitHub'    },
-  { icon: FiLinkedin, href: 'https://linkedin.com/in/juan-pablo-amaya-quiroz',          label: 'LinkedIn'  },
-  { icon: FiInstagram,href: 'https://instagram.com/',                                   label: 'Instagram' },
+  { icon: FiGithub,   href: 'https://github.com/jPAmaya11',                      label: 'GitHub'    },
+  { icon: FiLinkedin, href: 'https://www.linkedin.com/in/juan-pablo-amaya-quiroz-793813364',          label: 'LinkedIn'  },
+  { icon: FiInstagram,href: 'https://www.instagram.com/juanpiamayaquiroz?igsh=MWZhNXZ6OGdpejU3Zg==',                                   label: 'Instagram' },
   { icon: FaWhatsapp, href: 'https://wa.me/51956584532',                                label: 'WhatsApp'  },
   { icon: FiMail,     href: 'mailto:jamayaquiroz@gmail.com',                            label: 'Email'     },
 ];

@@ -113,8 +113,8 @@ const Contact = () => {
 
             <div className="flex gap-3">
               {[
-                { href: 'https://github.com/juanamayaquiroz', icon: FiGithub, label: 'GitHub' },
-                { href: 'https://linkedin.com/in/juan-pablo-amaya-quiroz', icon: FiLinkedin, label: 'LinkedIn' },
+                { href: 'https://github.com/jPAmaya11', icon: FiGithub, label: 'GitHub' },
+                { href: 'https://www.linkedin.com/in/juan-pablo-amaya-quiroz-793813364', icon: FiLinkedin, label: 'LinkedIn' },
               ].map(({ href, icon: Icon, label }) => (
                 <a
                   key={label}
