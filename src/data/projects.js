@@ -1,10 +1,10 @@
 export const projects = [
   {
     id: 1,
-    title: 'Neocenter — Sistema ERP Geatel',
+    title: 'NeoCenter — ERP Multitenant Corporativo',
     description:
-      'Módulos del sistema ERP interno de Geatel Telecom. Dashboards con Vue.js, APIs RESTful con Laravel e integración entre servicios internos.',
-    tech: ['PHP', 'Laravel', 'Vue.js', 'MySQL'],
+      'ERP multitenant con Laravel 12, Vue 3 e Inertia.js. Gestiona ventas, campañas y usuarios con permisos por rol (Spatie) y aislamiento de datos por tenant (Stancl/Tenancy).',
+    tech: ['Laravel 12', 'Vue.js 3', 'Inertia.js', 'MySQL', 'Tailwind CSS', 'Docker', 'Stancl/Tenancy'],
     category: 'Empresa',
     url: 'https://neocenter.geatel-telecom.com/',
     github: null,
@@ -14,7 +14,7 @@ export const projects = [
     id: 2,
     title: 'Neobusiness — ERP/CRM Modular Telecom',
     description:
-      'Sistema ERP/CRM modular desarrollado con Laravel 12, Vue.js 3 e Inertia.js. Integración con la Graph API de Facebook para captación de leads, importación masiva de datos, motor de reportes avanzado y gestión de permisos granular.',
+      'ERP/CRM modular para el sector telecom. Construido con Laravel 12, Vue.js 3 e Inertia.js. Incluye integración con Facebook Graph API, importación masiva de datos y motor de reportes con permisos granulares.',
     tech: ['PHP 8.2', 'Laravel 12', 'Vue.js 3', 'Inertia.js', 'MySQL', 'Facebook API'],
     category: 'Empresa',
     url: 'https://neobusiness.geatel-telecom.com/login',
@@ -23,10 +23,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Geatel Telecom — Landing & Bolsa de Trabajo',
+    title: 'GEATEL Telecom — Sitio Corporativo',
     description:
-      'Landing corporativa con landings autogenerables desde gestor interno (Neobusiness). Bolsa de trabajo con URLs dinámicas tipo Computrabajo.',
-    tech: ['Astro', 'Vue.js', 'Laravel', 'MySQL'],
+      'Sitio corporativo construido con Astro 5 y Tailwind CSS 4. SEO estructurado en JSON-LD, carruseles dinámicos con Owl Carousel y modales con frecuencia controlada por localStorage.',
+    tech: ['Astro 5', 'Tailwind CSS 4', 'Owl Carousel', 'SweetAlert2', 'JSON-LD'],
     category: 'Empresa',
     url: 'https://geatel-telecom.com/',
     github: null,
@@ -34,10 +34,10 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'Colegio Newton — Sistema de Gestión',
+    title: 'Educativo Newton — Sistema de Gestión Escolar',
     description:
-      'Sistema de gestión educativa freelance para Colegio Newton Paraíso. Administración de módulos académicos y control de acceso de usuarios.',
-    tech: ['PHP', 'Laravel', 'MySQL', 'Vue.js'],
+      'Sistema escolar con Laravel 12, Inertia.js y Vue 3. Gestiona matrículas, control de asistencia y módulo de cobros con exportación a Excel y PDF.',
+    tech: ['Laravel 12', 'Vue.js 3', 'Inertia.js', 'MySQL', 'Tailwind CSS', 'spatie/permission'],
     category: 'Freelance',
     url: 'https://newtonparaiso.site/login',
     github: null,
@@ -45,10 +45,10 @@ export const projects = [
   },
   {
     id: 5,
-    title: 'GestSaludPE — Plataforma Multitenancy Clínicas',
+    title: 'GestSaludPE — SaaS de Gestión Clínica',
     description:
-      'Sistema SaaS multitenancy para gestión de clínicas y laboratorios. Módulos de roles, permisos, usuarios y configuración por tenant.',
-    tech: ['Laravel', 'MySQL', 'Vue.js', 'Multitenancy'],
+      'SaaS multi-tenant con Laravel 12, Vue 3 e Inertia.js. Incluye agenda médica, historial clínico, facturación, caja registradora con auditoría y módulo de marketing segmentado.',
+    tech: ['Laravel 12', 'Vue.js 3', 'Inertia.js', 'MySQL', 'Tailwind CSS', 'spatie/permission'],
     category: 'Freelance',
     url: 'https://laboratorio.gestsaludpe.com/login',
     github: null,
@@ -56,10 +56,10 @@ export const projects = [
   },
   {
     id: 6,
-    title: 'Sistema de Agendamiento Online',
+    title: 'Nexo — Workspace Colaborativo',
     description:
-      'App con módulos de agendamiento, sincronización con Google Calendar, gestión de archivos en Google Drive y notas tipo Evernote.',
-    tech: ['Laravel', 'Vue.js', 'Google Calendar API', 'Google Drive API'],
+      'App con Laravel 12, Vue 3 e Inertia.js. Gestión de proyectos y tareas, notas tipo Evernote, reproducción de videos desde Drive y agenda sincronizada con Google Calendar.',
+    tech: ['Laravel 12', 'Vue.js 3', 'Inertia.js', 'Google Calendar API', 'Google Drive API', 'spatie/permission'],
     category: 'Personal',
     url: null,
     github: null,

@@ -6,7 +6,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const roles = [
   'Full-Stack Developer Junior',
-  'Especialista en PHP & Laravel',
+  'Experiencia en PHP & Laravel',
   'Apasionado por Vue.js & Python',
   'Disponible para Freelance',
 ];

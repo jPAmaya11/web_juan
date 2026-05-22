@@ -4,7 +4,7 @@ import AnimatedSection from '../ui/AnimatedSection';
 
 const stats = [
   { value: 1,  label: 'Año de experiencia',    suffix: '+' },
-  { value: 5,  label: 'Proyectos completados', suffix: '+' },
+  { value: 6,  label: 'Proyectos completados', suffix: '+' },
   { value: 9,  label: 'Tecnologías dominadas', suffix: '+' },
   { value: 4,  label: 'Certificaciones',       suffix: ''  },
 ];
