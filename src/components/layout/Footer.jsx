@@ -7,7 +7,7 @@ const socials = [
   { icon: FiLinkedin, href: 'https://www.linkedin.com/in/juan-pablo-amaya-quiroz-793813364',          label: 'LinkedIn'  },
   { icon: FiInstagram,href: 'https://www.instagram.com/juanpiamayaquiroz?igsh=MWZhNXZ6OGdpejU3Zg==',                                   label: 'Instagram' },
   { icon: FaWhatsapp, href: 'https://wa.me/51956584532',                                label: 'WhatsApp'  },
-  { icon: FiMail,     href: 'mailto:jamayaquiroz@gmail.com',                            label: 'Email'     },
+  { icon: FiMail,     href: '#contact',                                                 label: 'Email'     },
 ];
 
 const Footer = () => (
@@ -28,8 +28,8 @@ const Footer = () => (
           <a
             key={label}
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={href.startsWith('#') ? '_self' : '_blank'}
+            rel={href.startsWith('#') ? undefined : 'noopener noreferrer'}
             aria-label={label}
             className="text-slate-400 hover:text-accent transition-colors text-lg"
           >

@@ -25,7 +25,7 @@ const PUBLIC_KEY  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY  || '';
 const contactInfo = [
   { icon: FiMail,     label: 'Email',      value: 'jamayaquiroz@gmail.com',              href: 'mailto:jamayaquiroz@gmail.com' },
   { icon: FaWhatsapp, label: 'WhatsApp',   value: '+51 956 584 532',                     href: 'https://wa.me/51956584532?text=Hola%20Juan%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20contactarte.' },
-  { icon: FiLinkedin, label: 'LinkedIn',   value: 'juan-pablo-amaya-quiroz',             href: 'https://linkedin.com/in/juan-pablo-amaya-quiroz' },
+  { icon: FiLinkedin, label: 'LinkedIn',   value: 'juan-pablo-amaya-quiroz',             href: 'https://www.linkedin.com/in/juan-pablo-amaya-quiroz-793813364' },
   { icon: FiMapPin,   label: 'Ubicación',  value: 'Lima, Perú',                          href: null },
 ];
 
@@ -49,6 +49,13 @@ const Contact = () => {
   const [status, setStatus]   = useState('idle'); // idle | loading | success | error
   const [form, setForm]       = useState({ from_name: '', from_email: '', subject: '', message: '' });
   const [errors, setErrors]   = useState({});
+  const [copied, setCopied]   = useState(false);
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText('jamayaquiroz@gmail.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1000);
+  };
 
   const handleChange = (e) => {
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
@@ -95,6 +102,14 @@ const Contact = () => {
                   <div>
                     <p className="text-slate-400 text-xs font-mono mb-0.5">{label}</p>
                     {href ? (
+                      label === 'Email' ? (
+                        <button
+                          onClick={copyEmail}
+                          className="text-white text-sm hover:text-accent transition-colors cursor-pointer"
+                        >
+                          {copied ? '¡Copiado!' : value}
+                        </button>
+                      ) : (
                       <a
                         href={href}
                         target="_blank"
@@ -103,6 +118,7 @@ const Contact = () => {
                       >
                         {value}
                       </a>
+                      )
                     ) : (
                       <p className="text-white text-sm">{value}</p>
                     )}
