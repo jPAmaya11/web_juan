@@ -63,23 +63,23 @@ const About = () => (
         <AnimatedSection direction="left">
           <div className="space-y-5 text-slate-400 leading-relaxed text-[0.95rem]">
             <p>
-              Soy <span className="text-white font-semibold">Juan Pablo Amaya Quiroz</span>,
-              desarrollador web junior de 20 años radicado en Lima, Perú. Actualmente cursando
-              el 9° ciclo de{' '}
+              Soy <span className="text-white font-semibold">Juan Pablo Amaya</span>,
+              desarrollador web junior y estudiante de{' '}
               <span className="text-accent">Ingeniería de Sistemas Computacionales</span>{' '}
-              en la Universidad Privada del Norte.
+              en Lima, Perú.
             </p>
             <p>
-              Me desempeño como desarrollador en{' '}
-              <span className="text-white font-medium">Geatel Telecom</span>, donde construyo
-              módulos ERP, APIs RESTful con Laravel e interfaces con Vue.js. Paralelamente
-              gestiono proyectos freelance con sistemas de gestión personalizados para clientes
-              reales.
+              Actualmente formo parte del equipo de desarrollo de{' '}
+              <span className="text-white font-medium">Geatel Telecom</span>, donde desarrollo
+              módulos ERP, APIs RESTful con Laravel e interfaces con Vue.js. Además, realizo
+              proyectos freelance creando sistemas personalizados según las necesidades de cada
+              cliente, participando en todo el proceso: análisis, desarrollo, implementación y
+              despliegue.
             </p>
             <p>
-              Soy proactivo, autodidacta y me apasiona resolver problemas reales con código limpio
-              y bien estructurado. Fuera del trabajo me gusta el deporte y el liderazgo
-              comunitario.
+              Me gusta construir soluciones funcionales y bien estructuradas, resolver problemas
+              reales con tecnología y automatizar procesos que generen impacto. Siempre busco
+              aprender, aportar en equipo y crecer como desarrollador full stack.
             </p>
           </div>
 
